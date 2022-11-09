@@ -1,16 +1,18 @@
 import java.util.*;
-class Sample
+class Main
 {
-    public static void main(String args[])
+    public static void main(String[] args)
     {
         Scanner sc=new Scanner(System.in);
-        int n=sc.nextInt(),r;
-        while(n>0)
+        int y,x,rev;
+        x=sc.nextInt();
+        rev=0;
+        while(x>0)
         {
-            r=n%10;
-            System.out.print(r);
-            n=n/10;
-            
+           y=x%10; 
+            rev=rev*10+y;
+            x=x/10;
         }
+        System.out.println(rev);
     }
 }
